@@ -18,7 +18,7 @@ https://coulsonp.github.io/Scheduler-Challenge-5/
 ## Usage
 * This site is a place where a user can go to plan out their work day.
 * When the page is loaded the user is shown a graph with the time 5am to 9pm.
-* When the user clicks on one of the boxes they are allowed to type notes inside of the desire time.
+* When the user clicks on one of the boxes they are allowed to type notes inside of the desired time.
 * If they are satisfied with what they typed the user can then click a save button on the right side of the page to store the changes.
-* User is also shown colored time blocks. The time blocks represnt past present and future times. Grey represents past, red as present, and gren as future.
+* User is also shown colored time blocks. The time blocks represnt past present and future times. Grey represents past, red as present, and green as future.
 * The changes will stay the same even if the page is refreshed.
