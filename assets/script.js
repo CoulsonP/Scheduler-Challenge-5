@@ -17,3 +17,22 @@ $("#14 textarea").val(localStorage.getItem("14"))
 $("#15 textarea").val(localStorage.getItem("15"))
 $("#16 textarea").val(localStorage.getItem("16"))
 $("#17 textarea").val(localStorage.getItem("17"))
+// colorcode the time blocks to represent hours in the past present or future
+var hour = moment().format("H")
+//colorcode for past therfor divnumber is less than the hour
+$(".colorcode").each(function(){
+    var divnumber = parseInt($(this).attr("id"))
+    if(divnumber < hour) {
+        // had to remove class future because it wasnt working properly
+        $(this).removeClass("future")
+        $(this).addClass("past")
+    }
+    // colorcode for present therefor divnumber is equal to hour
+    else if(divnumber == hour) {
+        $(this).addClass("present")
+    }
+    // colorcode for future therefor divnumber is less than the hour
+    else if(divnumber > hour) {
+        $(this).addClass("future")
+    }
+})
